@@ -171,3 +171,30 @@ button.ghost {
 .overlay-left {
     transform: translateX(-20%);
 }
+/* ANIMATION */
+/* Move sign-in to right. */
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+/* Move red overlay to left. */
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+/* Make sign-up appear. */
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+/* Move overlay back to right. */
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+/* Adjustment for -20 ease-in for left overlay. */
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+/* Adjustment for -20 ease-in for right overlay. */
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
